@@ -1,2 +1,2 @@
 # CQToolBarMenu
-Qt ToolBar Meni
+Qt ToolBar Menu
