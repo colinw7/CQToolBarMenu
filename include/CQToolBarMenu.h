@@ -25,7 +25,7 @@ class CQToolBarMenu : public QObject {
   void exec(const QPoint &gpos);
 
  private:
-  bool eventFilter(QObject *obj, QEvent *event);
+  bool eventFilter(QObject *obj, QEvent *event) override;
 
   bool processEvent(QObject *obj, QEvent *event) const;
 
@@ -53,7 +53,7 @@ class CQToolBarMenuBar : public QFrame {
   void show(const QRect &rect);
 
  private:
-  bool event(QEvent *e);
+  bool event(QEvent *e) override;
 
  private:
   CQToolBarMenu *menu_   { nullptr };
