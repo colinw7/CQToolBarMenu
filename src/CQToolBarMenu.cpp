@@ -158,7 +158,7 @@ void
 CQToolBarMenuBar::
 show(const QRect &rect)
 {
-  setParent(0, Qt::Tool | Qt::FramelessWindowHint | Qt::X11BypassWindowManagerHint);
+  setParent(nullptr, Qt::Tool | Qt::FramelessWindowHint | Qt::X11BypassWindowManagerHint);
 
   setGeometry(rect);
 
